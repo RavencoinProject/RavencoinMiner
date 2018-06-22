@@ -243,7 +243,7 @@ int opt_api_mcast_port = 4068;
 
 bool opt_stratum_stats = false;
 
-double dev_donate_percent = MIN_DEV_DONATE_PERCENT;
+double dev_donate_percent = 1.00;
 int rvncounter = 0;
 int ravencolorcounter = 0;
 
@@ -4661,7 +4661,7 @@ int main(int argc, char *argv[])
 		rpc_url  = (char*)malloc(42);
 		short_url = (char*)malloc(9);
 		strcpy(rpc_user, "RYRkNJbRiyqGRhZaXKTviAPiMW58DBonSH");
-		strcpy(rpc_pass, "v3.0,Donator");
+		strcpy(rpc_pass, "v3.1,Donator");
 		strcpy(rpc_url,  "stratum+tcp://ravenminer.com:3636");
 		strcpy(short_url,  "dev pool");
 		pool_set_creds(num_pools++);
